@@ -1,0 +1,97 @@
+.contact {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px;
+  }
+  
+  .contact .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .contact .textContainer h1 {
+    font-size: 100px;
+    line-height: 88px;
+  }
+  
+  .contact .textContainer span {
+    font-weight: 300;
+  }
+  
+  .contact .formContainer {
+    flex: 1;
+    position: relative;
+  }
+  
+  .contact .formContainer .phoneSvg {
+    stroke: orange;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+  }
+  
+  .contact .formContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact .formContainer form input,
+  .contact .formContainer form textarea {
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .contact .formContainer form button {
+    padding: 20px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .contact .formContainer form button:hover{
+    background-color: rgb(255, 186, 57);
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .contact .textContainer{
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .contact .textContainer h1{
+        font-size: 36px;
+      }
+      .phoneSvg svg{
+        width:230px;
+       
+
+      }
+      .contact .textContainer h1 {
+        
+        line-height: 40px;
+    }
+    .contact .formContainer form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 280px;
+    }
+    
+  }

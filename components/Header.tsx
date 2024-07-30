@@ -8,7 +8,7 @@ import {HamburgerMenu} from "./design/Headermovnav";
 import {disablePageScroll, enablePageScroll} from "scroll-lock";
 
 const Header = () => {
-    const [openNavigation, setopenNavigation] = useState(true);
+    const [openNavigation, setopenNavigation] = useState(false);
 
     const toggleNavigation = () => {
         if (openNavigation) {
@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
         <div
-            className={`flex py-2  fixed top-0 z-50 w-full bg-n-8/20  lg:bg-n-8/90  ${
+            className={`flex py-2  absolute top-0 z-50 w-full bg-n-8/20  lg:bg-n-8/90  ${
                 openNavigation ? "bg-n-8" : " bg-n-8/90 backdrop-blur-sm"
             }`}
         >
