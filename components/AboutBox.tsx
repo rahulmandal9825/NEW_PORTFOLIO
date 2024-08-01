@@ -4,6 +4,20 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 
 const AboutBox = ({ title, description }: { title: string; description: string }) => {
+  const BoxVariants = {
+    initial: {
+        y: +200,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: .5,
+            staggerChildren: 0.1,
+            
+        },
+    },}
   const offsetX = useMotionValue(0);
   const offsetY = useMotionValue(0);
   const maskImage = useMotionTemplate`radial-gradient(200px 100px at ${offsetX}px ${offsetY}px, black, transparent)`;
@@ -25,8 +39,8 @@ const AboutBox = ({ title, description }: { title: string; description: string }
   }, [offsetX, offsetY]);
 
   return (
-    <div key={title} className="border flex-1 border-white/30 px-5 py-10 text-center rounded-xl relative">
-      <motion.div
+    <motion.div key={title} variants={BoxVariants} initial="initial"   whileInView="animate" className="border flex-1 border-white/30 px-5 py-10 text-center rounded-xl relative">
+      <motion.div 
         className="absolute inset-0 border-2 border-whiete  rounded-xl"
         style={{
           WebkitMaskImage: maskImage,
@@ -34,12 +48,12 @@ const AboutBox = ({ title, description }: { title: string; description: string }
         }}
         ref={borderRef}
       ></motion.div>
-      <div className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg">
+      <motion.div variants={BoxVariants} className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg">
         <ComputerIcon />
-      </div>
-      <h3 className="mt-6 font-bold">{title}</h3>
-      <p className="mt-2 text-white/70">{description}</p>
-    </div>
+      </motion.div>
+      <motion.h3 variants={BoxVariants} className="mt-6 font-bold">{title}</motion.h3>
+      <motion.p  variants={BoxVariants} className="mt-2 text-white/70">{description}</motion.p>
+    </motion.div>
   );
 };
 

@@ -1,12 +1,29 @@
+"use client";
 import {featuresaboutme} from "@/constants";
 import {ComputerIcon, SearchIcon} from "lucide-react";
 import React from "react";
 import AboutBox from "./AboutBox";
+import { motion } from "framer-motion";
 
 const Aboutus = () => {
+    
+    const aboutVariants = {
+        initial: {
+            y: +100,
+            opacity: 0,
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: .5,
+                staggerChildren: 0.1,
+                
+            },
+        },}
     return (
-        <div className="bg-black text-white py-[72px] ">
-            <div className=" container pl-14">
+        <motion.div className="bg-black text-white py-[72px] "  id="aboutus">
+            <motion.div variants={aboutVariants} initial="initial"   whileInView="animate"  className=" container pl-14">
                 <h2 className="text-center font-bold text-5xl tracking-tighter">About me</h2>
                 <div className="max-w-xl sm:max-w-3xl mx-auto">
                     <p className="text-center mt-5 text-xl text-white/70">
@@ -22,8 +39,8 @@ const Aboutus = () => {
                    <AboutBox title={title} description={description} key={title}/>
                     ))}
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 

@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   return (
-    <motion.div
+    <motion.div id="contactme" 
       ref={ref}
       className="contact  bg-black  text-white bg-gradient-to-b from-[#5D2CA8] to-black"
 
