@@ -9,7 +9,6 @@ import Techstack from "@/components/Techstack";
 export default function Home() {
   return (
     <main className="">
-      
       <Header/>
       <Hero/>
       <Techstack/>
