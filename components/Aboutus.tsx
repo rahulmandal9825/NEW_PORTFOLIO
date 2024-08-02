@@ -21,6 +21,20 @@ const Aboutus = () => {
                 
             },
         },}
+        const BoxVariants = {
+            initial: {
+                y: +200,
+                opacity: 0,
+            },
+            animate: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                    duration: .5,
+                    staggerChildren: 0.1,
+                    
+                },
+            },}
     return (
         <motion.div className="bg-black text-white py-[72px] "  id="aboutus">
             <motion.div variants={aboutVariants} initial="initial"   whileInView="animate"  className=" container md:pl-14">
@@ -34,11 +48,11 @@ const Aboutus = () => {
                     </p>
                 </div>
 
-                <div className=" mt-16 flex cursor-pointer  flex-col gap-4 sm:flex-row sm:flex-1 ">
+                <motion.div variants={BoxVariants} className=" mt-16 flex cursor-pointer  flex-col gap-4 sm:flex-row sm:flex-1 ">
                     {featuresaboutme.map(({title, description}) => (
                    <AboutBox title={title} description={description} key={title}/>
                     ))}
-                </div>
+                </motion.div>
             </motion.div>
         </motion.div>
     );

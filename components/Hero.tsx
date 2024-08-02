@@ -37,7 +37,7 @@ const Hero = () => {
             },}
     return (
         <Section
-            className="pt-[75px] relative overflow-clip md:-mt-[40px] mt-[30px] bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] "
+            className="pt-[25px] md:pt-[75px] relative overflow-clip md:-mt-[40px] mt-[30px] bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] "
             crosses
             crossesOffset="lg:translate-y-[5.25rem]"
             customPadding=""
