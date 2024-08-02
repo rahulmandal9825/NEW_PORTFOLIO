@@ -23,10 +23,10 @@ const Aboutus = () => {
         },}
     return (
         <motion.div className="bg-black text-white py-[72px] "  id="aboutus">
-            <motion.div variants={aboutVariants} initial="initial"   whileInView="animate"  className=" container pl-14">
-                <h2 className="text-center font-bold text-5xl tracking-tighter">About me</h2>
-                <div className="max-w-xl sm:max-w-3xl mx-auto">
-                    <p className="text-center mt-5 text-xl text-white/70">
+            <motion.div variants={aboutVariants} initial="initial"   whileInView="animate"  className=" container md:pl-14">
+                <h2 className="md:text-center font-bold text-5xl tracking-tighter">About me</h2>
+                <div className="max-w-xl sm:max-w-3xl md:mx-auto">
+                    <p className="md:text-center mt-5 text-xl text-white/70">
                         Passionate Full Stack Web Developer skilled in JavaScript, React, Node.js, Prisma , sql and
                         cloud technologies. Specializing in creating scalable web applications, secure authentication
                         systems, and advanced API integrations. Committed to Agile methodologies, delivering

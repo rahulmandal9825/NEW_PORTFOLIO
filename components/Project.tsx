@@ -59,11 +59,11 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1])
 
 
   return(
-    <motion.div    className="px-auto  flex flex-col justify-center items-center gap-1 md:gap-12 md:py-[73px] py-[20px]">
+    <motion.div    className="px-auto  flex flex-col justify-center items-center gap-1 md:gap-12 md:py-[73px] py-[10px]">
     <div  className="  ">
       <h2 className="text-center text-3xl font-bold tracking-tighter">{projectname}</h2>
-      <p className="text-xl text-center md:px-20 text-white/70 mt-5 mx-10">{projectdes}</p>
-      <p className="text-xl text-center md:px-20 text-white/70 mt-5 mx-10">{projectstack}</p>
+      <p className="text-xl md:text-center md:px-20 text-white/70 mt-5 mx-10">{projectdes}</p>
+      <p className="text-xl md:text-center md:px-20 text-white/70 mt-5 mx-10">{projectstack}</p>
     </div>
 
     <motion.div 

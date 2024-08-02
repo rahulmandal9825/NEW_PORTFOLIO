@@ -14,7 +14,7 @@ const Techstack = () => {
             <div className="container">
                 <h2 className="text-3xl text-center  font-semibold">My Tech Stack</h2>
                 <div
-                    className='flex  overflow-hidden ml-10  before:z-10 mt-9 before:content-[""] after:content-[""]  before:absolute after:absolute before:h-full after:h-full before:w-5 after:w-5 relative after:right-0  before:left-0 after:top-0 before:top-0 before:bg-[linear-gradient(to_right,#000,rgba(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgba(0,0,0,0))]'
+                    className='flex  overflow-hidden ml-1 md:ml-10  before:z-10 mt-9 before:content-[""] after:content-[""]  before:absolute after:absolute before:h-full after:h-full before:w-5 after:w-5 relative after:right-0  before:left-0 after:top-0 before:top-0 before:bg-[linear-gradient(to_right,#000,rgba(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgba(0,0,0,0))]'
                 >
                     <motion.div 
                     transition={{

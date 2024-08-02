@@ -61,7 +61,7 @@ const Hero = () => {
                         drag
                         dragSnapToOrigin
                         variants={imgVariants} initial="initial" animate="animate" 
-                        className="absolute rotate-90 -top-[60px] -left-[150px] md:top-[280px] md:-left-[50px] md:rotate-0 ">
+                        className="absolute  -bottom-[60px] -left-[100px] md:top-[280px] md:-left-[50px] md:rotate-0 ">
                         <Image
                             src="/assets/images/cursor.png"
                             width={200}
@@ -80,7 +80,7 @@ const Hero = () => {
                         Rahul Raslal Mandal{" "}
                         <Image
                             src="/hero/curve.png"
-                            className=" absolute  left-[175px] md:left-0 mt-1 "
+                            className=" absolute  left-[36px] md:left-0 mt-1 "
                             width={290}
                             height={30}
                             alt="Curve"
@@ -93,7 +93,7 @@ const Hero = () => {
                         React, Tailwind, Node.js, Express.js, Socket.io, RESTful APIs, MongoDB, Prisma, and SQL. I build
                         dynamic, responsive web applications and have experience with Prisma for deployment and scaling.
                     </motion.h2>
-                    <motion.div variants={textVariants}  className="flex md:gap-10 md:justify-normal mx-10 justify-between">
+                    <motion.div variants={textVariants}  className="flex md:gap-10 md:justify-normal  md:mx-10 justify-between">
                         <Link
                             to="project"
                             className="p-3 border-2 text-white hover:bg-white cursor-pointer transition hover:text-black border-white rounded-md text-[15px] font-normal  "
@@ -110,7 +110,7 @@ const Hero = () => {
                       <motion.div     
                        drag
                        dragSnapToOrigin
-                      className=" absolute  -top-[120px]  md:top-[200px] -right-[50px] "
+                      className=" absolute  hidden -top-[470px] md:block md:top-[200px] -right-[50px] "
                        >
 
                       <Image
