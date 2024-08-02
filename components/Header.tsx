@@ -64,7 +64,7 @@ const Header = () => {
             </div>
             <motion.nav 
                 className={`${
-                    openNavigation ? "flex backdrop-blur-lg transition-all " : "hidden"
+                    openNavigation ? "flex backdrop-blur-lg z-10 transition-all " : "hidden"
                 } fixed top-[5rem]  left-0 right-0 items-center bottom-0  lg:static lg:flex lg:ml-auto lg:mr-5 lg:flex-row `}
             >
                 <motion.div variants={navVariants} initial="initial" whileInView="animate"
@@ -90,7 +90,7 @@ const Header = () => {
                 </motion.div>
                 <HamburgerMenu />
             </motion.nav>
-            <div onClick={toggleNavigation} className=" absolute top-3 right-5 cursor-pointer  ">
+            <div onClick={toggleNavigation} className=" absolute top-5 right-5 cursor-pointer  ">
                 {openNavigation ? (
                     <Plus className=" rotate-45 h-7 w-7 lg:hidden " />
                 ) : (
